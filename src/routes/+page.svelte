@@ -16,7 +16,7 @@
 	/>
 	<meta
 		property="og:image"
-		content="https://jacoblincool.github.io/april-fools-playlist-2024/favicon.png"
+		content="https://github.com/JacobLinCool/april-fools-playlist-2024/blob/main/static/favicon.png?raw=true"
 	/>
 	<meta property="twitter:card" content="summary_large_image" />
 </svelte:head>
