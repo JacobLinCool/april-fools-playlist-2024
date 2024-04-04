@@ -26,9 +26,6 @@ devDependencies:
     "@typescript-eslint/parser":
         specifier: ^7.4.0
         version: 7.4.0(eslint@8.57.0)(typescript@5.4.3)
-    aplayer:
-        specifier: ^1.10.1
-        version: 1.10.1
     autoprefixer:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.4.38)
@@ -68,6 +65,9 @@ devDependencies:
     svelte:
         specifier: ^4.2.12
         version: 4.2.12
+    svelte-audio:
+        specifier: ^1.0.1
+        version: 1.0.1(svelte@4.2.12)
     svelte-check:
         specifier: ^3.6.8
         version: 3.6.8(postcss@8.4.38)(svelte@4.2.12)
@@ -4348,6 +4348,18 @@ packages:
                 integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==,
             }
         engines: { node: ">= 0.4" }
+        dev: true
+
+    /svelte-audio@1.0.1(svelte@4.2.12):
+        resolution:
+            {
+                integrity: sha512-971HXGN6QRlndqA48q6NNPrl6t+KOjJZwzHEaTE8a38WKiigq3hQpreN6gCDezvJF+OyN+BiVflh9+8qKz1Tfw==,
+            }
+        peerDependencies:
+            svelte: ^4.0.0
+        dependencies:
+            aplayer: 1.10.1
+            svelte: 4.2.12
         dev: true
 
     /svelte-check@3.6.8(postcss@8.4.38)(svelte@4.2.12):

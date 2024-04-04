@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Player from "$lib/components/Player.svelte";
+	import { Audio } from "svelte-audio";
 
 	export let data;
 
@@ -28,12 +28,7 @@
 		</h1>
 		<p class="opacity-70">NTNU Computer Programming April Fools' Day Special Project 2024</p>
 	</div>
-	{#if !ready}
-		<div>
-			<p>Loading...</p>
-		</div>
-	{/if}
 	<div class="max-w-full">
-		<Player {playlist} on:ready={() => (ready = true)} />
+		<Audio {playlist} on:loadedmetadata={() => (ready = true)} />
 	</div>
 </div>
